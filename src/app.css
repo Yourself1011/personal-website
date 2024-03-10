@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 8rem;
+}
