@@ -12,5 +12,11 @@
 
 h1 {
     font-family: "Ubuntu Mono", monospace;
-    font-size: 8rem;
+    font-size: min(8rem, 10svw);
+    text-align: center;
+}
+h2 {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 4rem;
+    text-align: center
 }
