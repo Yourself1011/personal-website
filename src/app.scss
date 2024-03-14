@@ -10,6 +10,10 @@
     font-family: "Raleway", sans-serif;
 }
 
+/* p {
+    font-size: 1.125rem;
+} */
+
 h1 {
     font-family: "Ubuntu Mono", monospace;
     font-size: min(8rem, 10svw);
@@ -18,5 +22,9 @@ h1 {
 h2 {
     font-family: "Ubuntu Mono", monospace;
     font-size: 4rem;
-    text-align: center
+    text-align: center;
+}
+h3 {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 2rem;
 }
