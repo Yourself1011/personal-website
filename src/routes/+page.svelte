@@ -1,5 +1,6 @@
 <script lang="ts">
     import Circle from "$lib/Circle.svelte";
+    import MoreProjects from "$lib/MoreProjects.svelte";
     import Project from "$lib/Project.svelte";
     import Replit from "$lib/icons/Replit.svelte";
     import type { PageData } from "./$types";
@@ -181,5 +182,27 @@
                 },
             ]}
         />
+    </section>
+    <section class="md:p-16 py-16 px-4">
+        <h2 class="mb-8">More Projects</h2>
+        <div
+            class="max-w-4xl mx-auto rounded-lg border-[#4B4B4B] border-[1px] overflow-clip leading-none"
+        >
+            <div class="w-full p-2 bg-[#37333B] flex flex-row gap-2">
+                <div class="rounded-full bg-red-500 h-3 w-3"></div>
+                <div class="rounded-full bg-yellow-500 h-3 w-3"></div>
+                <div class="rounded-full bg-green-500 h-3 w-3"></div>
+            </div>
+            <div
+                class="w-full h-[48rem] bg-[#1E1E1E] p-2 font-mono text-lime-400"
+            >
+                <span class="text-slate-400">
+                    danielzhang@Daniels-MacBook-Air ~/dev>
+                </span>
+                ls<br />
+                Use arrow keys or click to navigate
+                <MoreProjects />
+            </div>
+        </div>
     </section>
 </main>

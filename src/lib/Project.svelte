@@ -28,7 +28,7 @@
             <img
                 {src}
                 alt=""
-                class={`absolute ${locations[i]} left-1/2 md:max-w-[33%] max-w-[95%] min-h-[33%] rounded-sm bgImg`}
+                class={`absolute ${locations[i]} left-1/2 md:max-w-[33%] max-w-[95%] rounded-sm bgImg`}
             />
         {/each}
     </div>
