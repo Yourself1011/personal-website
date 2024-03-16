@@ -22,14 +22,24 @@
     export let techs: Tech[];
 </script>
 
-<div class="relative md:px-16 px-4 py-64 mb-64">
-    <div class="absolute left-0 top-0 w-full h-full">
+<div class="relative md:px-16 px-4 py-64 my-96 preserve-3d">
+    <div class="absolute left-0 top-0 w-full h-full preserve-3d">
         {#each imgPaths as src, i}
-            <img
-                {src}
-                alt=""
-                class={`absolute ${locations[i]} left-1/2 md:max-w-[33%] max-w-[95%] rounded-sm bgImg`}
-            />
+            <div
+                class="absolute {locations[
+                    i
+                ]} left-1/2 md:max-w-[33%] max-w-[95%] bgImgContainer preserve-3d"
+            >
+                <img
+                    {src}
+                    alt=""
+                    class="rounded-sm bgImg {[
+                        `perspective-[4.5rem]`,
+                        `perspective-12`,
+                        `perspective-6`,
+                    ][i]}"
+                />
+            </div>
         {/each}
     </div>
     <div
@@ -80,7 +90,8 @@
             rgba(0, 0, 0, 1),
             rgba(0, 0, 0, 0)
         );
-
+    }
+    .bgImgContainer {
         @media (max-width: 768px) {
             transform: translateX(-50%);
         }

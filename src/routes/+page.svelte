@@ -11,49 +11,27 @@
 </script>
 
 <main>
-    <section class="relative h-dvh flex justify-center items-center z-10">
-        <svg
-            width="100%"
-            height="150%"
-            class="absolute w-full h-[150%] top-0 -z-10"
-        >
-            <defs>
-                <filter
-                    id="grainyBlur"
-                    x="-50%"
-                    y="-50%"
-                    width="200%"
-                    height="200%"
-                >
-                    <feGaussianBlur stdDeviation="25" result="blur" />
-                    <feTurbulence
-                        type="fractalNoise"
-                        baseFrequency="0.25"
-                        numOctaves="3"
-                        stitchTiles="stitch"
-                        result="noise"
-                    />
-                    <feComposite
-                        operator="in"
-                        in="blur"
-                        in2="fractalNoise"
-                        result="masked"
-                    />
-                    <feBlend in="blur" in2="masked" mode="multiply" />
-                </filter>
-            </defs>
-
-            {#each data.circles as { fill, cx, cy, r }}
+    <section
+        class="relative h-dvh flex justify-center items-center z-10"
+        id="splash"
+    >
+        {#each data.circles as { fill, cx, cy, r }}
+            <svg
+                width="100%"
+                height="150%"
+                class="absolute w-full h-[150%] top-0 left-0 right-0 bottom-0 -z-10"
+            >
                 <Circle {fill} {cx} {cy} {r} />
-            {/each}
-        </svg>
+            </svg>
+        {/each}
         <div>
             <h1>Daniel Zhang</h1>
         </div>
     </section>
-    <section
-        class="bg-gradient-to-b from-black via-slate-950 to-black relative"
-    >
+    <section class=" relative">
+        <div
+            class="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-black via-slate-950 to-black perspective-24"
+        />
         <h2 class="my-8">Highlights</h2>
         <Project
             title="Ultimate Fluid Sim"
@@ -206,3 +184,30 @@
         </div>
     </section>
 </main>
+
+<style lang="scss">
+    main {
+        height: 100svh;
+        perspective: 8rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transform-style: preserve-3d;
+
+        section {
+            transform-style: preserve-3d;
+            // transform: translate3d(700px, 0, -200px) rotateY(15deg);
+        }
+
+        #splash {
+            svg:nth-child(1) {
+                transform: translateZ(-6rem) scale(1.75);
+            }
+            svg:nth-child(2) {
+                transform: translateZ(-4rem) scale(1.5);
+            }
+            svg:nth-child(3) {
+                transform: translateZ(-2rem) scale(1.25);
+            }
+        }
+    }
+</style>
