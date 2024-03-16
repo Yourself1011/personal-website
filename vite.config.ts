@@ -9,4 +9,7 @@ export default defineConfig({
             compiler: "svelte",
         }),
     ],
+    optimizeDeps: {
+        exclude: ["image-to-ansi", "ansi_up"],
+    },
 });
