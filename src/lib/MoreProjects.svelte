@@ -52,26 +52,22 @@
         {/each}
     </p>
     <div>
-        {#each projects as project, i}
-            <div class={index == i ? "" : "hidden"}>
-                <p
-                    class="md:text-[min(1rem,calc((50svw-5rem)/27))] text-[calc((100svw-3rem)/27)]"
-                >
-                    {@html project.image}
-                </p>
-                <br />
-                <p>
-                    {project.description}
-                </p>
-                <br />
-                <a
-                    class="block text-slate-400"
-                    href={project.link}
-                    target="_blank"
-                >
-                    {"<"}Enter{">"} or click here for more
-                </a>
-            </div>
-        {/each}
+        <p
+            class="md:text-[min(1rem,calc((50svw-5rem)/27))] text-[calc((100svw-3rem)/27)]"
+        >
+            {@html p.image}
+        </p>
+        <br />
+        <p>
+            {p.description}
+        </p>
+        <br />
+        <a
+            class="block text-slate-400"
+            href={p.link}
+            target="_blank"
+        >
+            {"<"}Enter{">"} or click here for more
+        </a>
     </div>
 </div>
