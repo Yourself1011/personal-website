@@ -4,10 +4,12 @@
     import Project from "$lib/Project.svelte";
     import Replit from "$lib/icons/Replit.svelte";
     import type { PageData } from "./$types";
+    import SvelteIcon from "~icons/logos/svelte-icon"
     import BiGithub from "~icons/bi/github";
     import BiYoutube from "~icons/bi/youtube";
     import BiLinkedin from "~icons/bi/linkedin";
     import BiFileEarmarkTextFill from "~icons/bi/file-earmark-text-fill";
+    import {randomEmoji} from "$lib/utils"
 
     export let data: PageData;
 
@@ -67,7 +69,7 @@
     </section>
     <section class="relative">
         <div
-            class="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-black via-slate-950 to-black perspective-24"
+            class="absolute left-0 top-[200svh] h-[60%] w-full bg-gradient-to-b from-black via-slate-950 to-black perspective-24"
         />
         <h2 class="my-8">Highlights</h2>
         <Project
@@ -220,6 +222,35 @@
             </div>
         </div>
     </section>
+    <footer class="mt-32 p-16 grid grid-cols-2 grid-rows-2 gap-16 place-content-center border-t-[1px] border-t-slate-800 bg-gradient-to-b from-black to-slate-950">
+        <div class="flex flex-row items-center justify-center gap-4">
+            <img src="/favicon.svg" alt="Daniel Zhang logo" class="invert h-12 w-12 inline" />
+            <span>© Daniel Zhang 2024</span>
+        </div>
+        <div class="flex flex-row items-center justify-center gap-8">
+            <a href="https://github.com/Yourself1011">
+                Github
+            </a>
+            <a
+                href="https://www.linkedin.com/in/daniel-zhang-0770a0249/"
+            >
+                Linkedin
+            </a>
+            <a
+                href="https://drive.google.com/file/d/1KUxfa9MNOW0ZjcVuMHvlZE1-GJHGwcQt/view"
+            >
+                Resume
+            </a>
+            <a
+                href="https://github.com/Yourself1011/personal-website"
+            >
+                Source
+            </a>
+        </div>
+        <div class="col-span-2 flex justify-center items-end">
+            <span>Made with {randomEmoji()} and {randomEmoji()} (and <SvelteIcon class="inline" />)</span>
+        </div>
+    </footer>
 </main>
 
 <style lang="scss">
