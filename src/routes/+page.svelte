@@ -222,7 +222,7 @@
             </div>
         </div>
     </section>
-    <footer class="mt-32 p-16 grid grid-cols-2 grid-rows-2 gap-16 place-content-center border-t-[1px] border-t-slate-800 bg-gradient-to-b from-black to-slate-950">
+    <footer class="mt-32 p-16 grid md:grid-cols-2 md:grid-rows-2 grid-cols-1 grid-rows-3 gap-16 place-content-center border-t-[1px] border-t-slate-800 bg-gradient-to-b from-black to-slate-950">
         <div class="flex flex-row items-center justify-center gap-4">
             <img src="/favicon.svg" alt="Daniel Zhang logo" class="invert h-12 w-12 inline" />
             <span>© Daniel Zhang 2024</span>
@@ -247,7 +247,7 @@
                 Source
             </a>
         </div>
-        <div class="col-span-2 flex justify-center items-end">
+        <div class="md:col-span-2 flex justify-center items-end">
             <span>Made with {randomEmoji()} and {randomEmoji()} (and <SvelteIcon class="inline" />)</span>
         </div>
     </footer>
