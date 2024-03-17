@@ -54,7 +54,9 @@
     <div>
         {#each projects as project, i}
             <div class={index == i ? "" : "hidden"}>
-                <p class="md:text-[1rem] text-[calc((100svw-3rem)/27)]">
+                <p
+                    class="md:text-[min(1rem,calc((50svw-5rem)/27))] text-[calc((100svw-3rem)/27)]"
+                >
                     {@html project.image}
                 </p>
                 <br />

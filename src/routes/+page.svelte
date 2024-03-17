@@ -6,11 +6,15 @@
     import type { PageData } from "./$types";
     import BiGithub from "~icons/bi/github";
     import BiYoutube from "~icons/bi/youtube";
+    import BiLinkedin from "~icons/bi/linkedin";
+    import BiFileEarmarkTextFill from "~icons/bi/file-earmark-text-fill";
 
     export let data: PageData;
+
+    let scrolled = false;
 </script>
 
-<main>
+<main on:scroll={() => (scrolled = true)}>
     <section
         class="relative h-dvh flex justify-center items-center z-10"
         id="splash"
@@ -26,9 +30,34 @@
         {/each}
         <div>
             <h1>Daniel Zhang</h1>
+            <div
+                class="flex justify-center text-5xl {scrolled
+                    ? 'opacity-100'
+                    : 'opacity-0'} transition-opacity duration-1000 ease-in-out"
+            >
+                <div class="px-8">
+                    <a href="https://github.com/Yourself1011">
+                        <BiGithub />
+                    </a>
+                </div>
+                <div class="px-8 border-l-[1px] border-l-slate-800">
+                    <a
+                        href="https://www.linkedin.com/in/daniel-zhang-0770a0249/"
+                    >
+                        <BiLinkedin />
+                    </a>
+                </div>
+                <div class="px-8 border-l-[1px] border-l-slate-800">
+                    <a
+                        href="https://drive.google.com/file/d/1KUxfa9MNOW0ZjcVuMHvlZE1-GJHGwcQt/view"
+                    >
+                        <BiFileEarmarkTextFill />
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
-    <section class=" relative">
+    <section class="relative">
         <div
             class="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-black via-slate-950 to-black perspective-24"
         />
