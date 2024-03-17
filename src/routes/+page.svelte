@@ -14,6 +14,14 @@
     let scrolled = false;
 </script>
 
+<svelte:head>
+    <title>Daniel Zhang</title>
+    <meta
+        name="description"
+        content="The software development portfolio website for Daniel Zhang"
+    />
+</svelte:head>
+
 <main on:scroll={() => (scrolled = true)}>
     <section
         class="relative h-dvh flex justify-center items-center z-10"
@@ -31,7 +39,7 @@
         <div>
             <h1>Daniel Zhang</h1>
             <div
-                class="flex justify-center text-5xl {scrolled
+                class="flex justify-center md:text-5xl text-2xl {scrolled
                     ? 'opacity-100'
                     : 'opacity-0'} transition-opacity duration-1000 ease-in-out"
             >

@@ -28,7 +28,7 @@
             <div
                 class="absolute {locations[
                     i
-                ]} left-1/2 md:max-w-[33%] max-w-[95%] bgImgContainer preserve-3d"
+                ]} left-1/2 md:w-[33%] w-[95%] bgImgContainer preserve-3d"
             >
                 <img
                     {src}
