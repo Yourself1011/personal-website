@@ -26,14 +26,14 @@
 
 <main on:scroll={() => (scrolled = true)}>
     <section
-        class="relative h-dvh flex justify-center items-center z-10"
+        class="relative h-dvh flex justify-center items-center"
         id="splash"
     >
         {#each data.circles as { fill, cx, cy, r }}
             <svg
                 width="100%"
                 height="150%"
-                class="absolute w-full h-[150%] top-0 left-0 right-0 bottom-0 -z-10"
+                class="absolute w-full h-[150%] top-0 left-0 right-0 bottom-0"
             >
                 <Circle {fill} {cx} {cy} {r} />
             </svg>
