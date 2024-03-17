@@ -26,7 +26,7 @@
 
 <main on:scroll={() => (scrolled = true)}>
     <section
-        class="relative h-dvh flex justify-center items-center"
+        class="relative h-dvh flex justify-center items-center z-10"
         id="splash"
     >
         {#each data.circles as { fill, cx, cy, r }}
