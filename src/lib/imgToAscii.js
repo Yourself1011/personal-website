@@ -4,7 +4,7 @@ const ansi_up = new AnsiUp();
 
 let path = process.argv[2];
 
-imageToAscii(path, { size: { width: 27 }, white_bg: false }, (err, res) => {
+imageToAscii(path, { size: { width: 16 }, white_bg: false }, (err, res) => {
     console.log(res);
     console.log(
         ansi_up

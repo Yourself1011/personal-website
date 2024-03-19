@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { projects } from "./data";
+    import { projects } from "./moreProjectsData";
 
     let index = 0;
 
@@ -62,11 +62,7 @@
             {p.description}
         </p>
         <br />
-        <a
-            class="block text-slate-400"
-            href={p.link}
-            target="_blank"
-        >
+        <a class="block text-slate-400 underline" href={p.link} target="_blank">
             {"<"}Enter{">"} or click here for more
         </a>
     </div>

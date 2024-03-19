@@ -1,15 +1,15 @@
 <script lang="ts">
     import Circle from "$lib/Circle.svelte";
-    import MoreProjects from "$lib/MoreProjects.svelte";
     import Project from "$lib/Project.svelte";
     import Replit from "$lib/icons/Replit.svelte";
     import type { PageData } from "./$types";
-    import SvelteIcon from "~icons/logos/svelte-icon"
+    import SvelteIcon from "~icons/logos/svelte-icon";
     import BiGithub from "~icons/bi/github";
     import BiYoutube from "~icons/bi/youtube";
     import BiLinkedin from "~icons/bi/linkedin";
     import BiFileEarmarkTextFill from "~icons/bi/file-earmark-text-fill";
-    import {randomEmoji} from "$lib/utils"
+    import { randomEmoji } from "$lib/utils";
+    import Terminal from "$lib/Terminal.svelte";
 
     export let data: PageData;
 
@@ -201,39 +201,22 @@
         />
     </section>
     <section class="md:p-16 py-16 px-4">
-        <h2 class="mb-8">More Projects</h2>
-        <div
-            class="max-w-4xl mx-auto rounded-lg border-[#4B4B4B] border-[1px] overflow-clip leading-none"
-        >
-            <div class="w-full p-2 bg-[#37333B] flex flex-row gap-2">
-                <div class="rounded-full bg-red-500 h-3 w-3"></div>
-                <div class="rounded-full bg-yellow-500 h-3 w-3"></div>
-                <div class="rounded-full bg-green-500 h-3 w-3"></div>
-            </div>
-            <div
-                class="w-full h-[48rem] bg-[#1E1E1E] p-2 font-mono text-lime-400"
-            >
-                <span class="text-slate-400">
-                    danielzhang@Daniels-MacBook-Air ~/dev>
-                </span>
-                ls<br />
-                Use arrow keys or click to navigate
-                <MoreProjects />
-            </div>
-        </div>
+        <Terminal />
     </section>
-    <footer class="mt-32 p-16 grid md:grid-cols-2 md:grid-rows-2 grid-cols-1 grid-rows-3 gap-16 place-content-center border-t-[1px] border-t-slate-800 bg-gradient-to-b from-black to-slate-950">
+    <footer
+        class="mt-32 p-16 grid md:grid-cols-2 md:grid-rows-2 grid-cols-1 grid-rows-3 gap-16 place-content-center border-t-[1px] border-t-slate-800 bg-gradient-to-b from-black to-slate-950"
+    >
         <div class="flex flex-row items-center justify-center gap-4">
-            <img src="/favicon.svg" alt="Daniel Zhang logo" class="invert h-12 w-12 inline" />
+            <img
+                src="/favicon.svg"
+                alt="Daniel Zhang logo"
+                class="invert h-12 w-12 inline"
+            />
             <span>© Daniel Zhang 2024</span>
         </div>
         <div class="flex flex-row items-center justify-center gap-8">
-            <a href="https://github.com/Yourself1011">
-                Github
-            </a>
-            <a
-                href="https://www.linkedin.com/in/daniel-zhang-0770a0249/"
-            >
+            <a href="https://github.com/Yourself1011"> Github </a>
+            <a href="https://www.linkedin.com/in/daniel-zhang-0770a0249/">
                 Linkedin
             </a>
             <a
@@ -241,14 +224,16 @@
             >
                 Resume
             </a>
-            <a
-                href="https://github.com/Yourself1011/personal-website"
-            >
+            <a href="https://github.com/Yourself1011/personal-website">
                 Source
             </a>
         </div>
         <div class="md:col-span-2 flex justify-center items-end">
-            <span>Made with {randomEmoji()} and {randomEmoji()} (and <SvelteIcon class="inline" />)</span>
+            <span
+                >Made with {randomEmoji()} and {randomEmoji()} (and <SvelteIcon
+                    class="inline"
+                />)</span
+            >
         </div>
     </footer>
 </main>
