@@ -8,6 +8,7 @@
     import BiYoutube from "~icons/bi/youtube";
     import BiLinkedin from "~icons/bi/linkedin";
     import BiFileEarmarkTextFill from "~icons/bi/file-earmark-text-fill";
+    import BiEnvelopeFill from "~icons/bi/envelope-fill";
     import { randomEmoji } from "$lib/utils";
     import Terminal from "$lib/Terminal.svelte";
 
@@ -46,13 +47,14 @@
                     : 'opacity-0'} transition-opacity duration-1000 ease-in-out"
             >
                 <div class="px-8">
-                    <a href="https://github.com/Yourself1011">
+                    <a href="https://github.com/Yourself1011" target="_blank">
                         <BiGithub />
                     </a>
                 </div>
                 <div class="px-8 border-l-[1px] border-l-slate-800">
                     <a
                         href="https://www.linkedin.com/in/daniel-zhang-0770a0249/"
+                        target="_blank"
                     >
                         <BiLinkedin />
                     </a>
@@ -60,8 +62,14 @@
                 <div class="px-8 border-l-[1px] border-l-slate-800">
                     <a
                         href="https://drive.google.com/file/d/1KUxfa9MNOW0ZjcVuMHvlZE1-GJHGwcQt/view"
+                        target="_blank"
                     >
                         <BiFileEarmarkTextFill />
+                    </a>
+                </div>
+                <div class="px-8 border-l-[1px] border-l-slate-800">
+                    <a href="mailto:hi@danielzh.dev" target="_blank">
+                        <BiEnvelopeFill />
                     </a>
                 </div>
             </div>
@@ -214,17 +222,27 @@
             />
             <span>© Daniel Zhang 2024</span>
         </div>
-        <div class="flex flex-row items-center justify-center gap-8">
-            <a href="https://github.com/Yourself1011"> Github </a>
-            <a href="https://www.linkedin.com/in/daniel-zhang-0770a0249/">
+        <div class="flex flex-row flex-wrap items-center justify-center gap-8">
+            <a href="https://github.com/Yourself1011" target="_blank">
+                Github
+            </a>
+            <a
+                href="https://www.linkedin.com/in/daniel-zhang-0770a0249/"
+                target="_blank"
+            >
                 Linkedin
             </a>
             <a
                 href="https://drive.google.com/file/d/1KUxfa9MNOW0ZjcVuMHvlZE1-GJHGwcQt/view"
+                target="_blank"
             >
                 Resume
             </a>
-            <a href="https://github.com/Yourself1011/personal-website">
+            <a href="mailto:hi@danielzh.dev" target="_blank"> Email </a>
+            <a
+                href="https://github.com/Yourself1011/personal-website"
+                target="_blank"
+            >
                 Source
             </a>
         </div>
