@@ -3,15 +3,31 @@
     import { languages } from "./languageData";
 
     let tab = 0;
+    let focus = true;
 </script>
+
+<svelte:window
+    on:focus={() => (focus = true)}
+    on:blur={() => (focus = false)}
+/>
 
 <div
     class="max-w-4xl mx-auto rounded-lg border-[#4B4B4B] border-[1px] overflow-clip leading-none font-mono"
 >
     <div class="w-full p-2 bg-[#37333B] flex flex-row gap-2">
-        <div class="rounded-full bg-red-500 h-3 w-3"></div>
-        <div class="rounded-full bg-yellow-500 h-3 w-3"></div>
-        <div class="rounded-full bg-green-500 h-3 w-3"></div>
+        <div
+            class="rounded-full {focus ? 'bg-red-500' : 'bg-[#4F4955]'} h-3 w-3"
+        ></div>
+        <div
+            class="rounded-full {focus
+                ? 'bg-yellow-500'
+                : 'bg-[#4F4955]'} h-3 w-3"
+        ></div>
+        <div
+            class="rounded-full {focus
+                ? 'bg-green-500'
+                : 'bg-[#4F4955]'} h-3 w-3"
+        ></div>
     </div>
     <div class="flex flex-row">
         <button
