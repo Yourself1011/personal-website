@@ -2,7 +2,7 @@
     import "../app.scss";
 </script>
 
-<svg class="hidden">
+<svg class="size-0">
     <defs>
         <filter id="grainyBlur" x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur stdDeviation="25" result="blur" />
