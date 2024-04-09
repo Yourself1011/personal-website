@@ -26,10 +26,7 @@
 </svelte:head>
 
 <main on:scroll={() => (scrolled = true)}>
-    <section
-        class="relative h-dvh flex justify-center items-center z-10"
-        id="splash"
-    >
+    <section class="relative h-dvh flex justify-center items-center z-10" id="splash">
         {#each data.circles as { fill, cx, cy, r }}
             <svg
                 width="100%"
@@ -52,10 +49,7 @@
                     </a>
                 </div>
                 <div class="px-8 border-l-[1px] border-l-slate-800">
-                    <a
-                        href="https://www.linkedin.com/in/daniel-zhang-0770a0249/"
-                        target="_blank"
-                    >
+                    <a href="https://www.linkedin.com/in/daniel-zhang-0770a0249/" target="_blank">
                         <BiLinkedin />
                     </a>
                 </div>
@@ -95,11 +89,7 @@
                     style: "bg-[#21262d]",
                 },
             ]}
-            locations={[
-                "top-1 -translate-x-[125%]",
-                "top-1/2",
-                "bottom-0 translate-x-[25%]",
-            ]}
+            locations={["top-1 -translate-x-[125%]", "top-1/2", "bottom-0 translate-x-[25%]"]}
             techs={[
                 {
                     name: "Processing",
@@ -111,11 +101,7 @@
         <Project
             title="Ant Colonies"
             description="An implementation of Kenneth Stanley's NeuroEvolution of Augmenting Topologies (NEAT). In this implementation, ant colonies compete against each other for food. The best colonies produce similar colonies, making the colonies progressively better. It is able to simulate fighting, food, pheromones, offspring, and nest raids."
-            imgPaths={[
-                "/antColonies/img1.png",
-                "/antColonies/img2.png",
-                "/antColonies/img3.png",
-            ]}
+            imgPaths={["/antColonies/img1.png", "/antColonies/img2.png", "/antColonies/img3.png"]}
             buttons={[
                 {
                     icon: BiGithub,
@@ -123,11 +109,7 @@
                     style: "bg-[#21262d]",
                 },
             ]}
-            locations={[
-                "top-0 translate-x-[25%]",
-                "top-1/2",
-                "bottom-0 -translate-x-[125%]",
-            ]}
+            locations={["top-0 translate-x-[25%]", "top-1/2", "bottom-0 -translate-x-[125%]"]}
             techs={[
                 {
                     name: "Processing",
@@ -139,15 +121,11 @@
         <Project
             title="motus."
             description="A wheelchair controlled with your eyes, submitted to Hack the North 2023. All circuitry, code, and construction was built in the span of 34 hours, from an office chair and provided eye-tracking glasses."
-            imgPaths={[
-                "/motus/img1.jpeg",
-                "/motus/img2.jpeg",
-                "/motus/img3.jpeg",
-            ]}
+            imgPaths={["/motus/img1.jpeg", "/motus/img2.jpeg", "/motus/img3.jpeg"]}
             buttons={[
                 {
                     icon: BiGithub,
-                    href: "https://github.com/Yourself1011/Ant-Colonies",
+                    href: "https://github.com/jeffrey-zang/motus",
                     style: "bg-[#21262d]",
                 },
                 {
@@ -156,11 +134,7 @@
                     style: "bg-[#ED3833]",
                 },
             ]}
-            locations={[
-                "top-0 -translate-x-[125%]",
-                "top-1/2",
-                "bottom-0 translate-x-[25%]",
-            ]}
+            locations={["top-0 -translate-x-[125%]", "top-1/2", "bottom-0 translate-x-[25%]"]}
             techs={[
                 {
                     name: "Python",
@@ -185,7 +159,7 @@
             buttons={[
                 {
                     icon: BiGithub,
-                    href: "https://github.com/Yourself1011/Ant-Colonies",
+                    href: "https://github.com/Yourself1011/Mr-V-Simulator",
                     style: "bg-[#21262d]",
                 },
                 {
@@ -194,11 +168,7 @@
                     style: "bg-[#EF6236]",
                 },
             ]}
-            locations={[
-                "top-0 -translate-x-[125%]",
-                "top-1/2",
-                "bottom-0 translate-x-[25%]",
-            ]}
+            locations={["top-0 -translate-x-[125%]", "top-1/2", "bottom-0 translate-x-[25%]"]}
             techs={[
                 {
                     name: "Python",
@@ -215,21 +185,12 @@
         class="mt-32 p-16 grid md:grid-cols-2 md:grid-rows-2 grid-cols-1 grid-rows-3 gap-16 place-content-center border-t-[1px] border-t-slate-800 bg-gradient-to-b from-black to-slate-950"
     >
         <div class="flex flex-row items-center justify-center gap-4">
-            <img
-                src="/favicon.svg"
-                alt="Daniel Zhang logo"
-                class="invert h-12 w-12 inline"
-            />
+            <img src="/favicon.svg" alt="Daniel Zhang logo" class="invert h-12 w-12 inline" />
             <span>© Daniel Zhang 2024</span>
         </div>
         <div class="flex flex-row flex-wrap items-center justify-center gap-8">
-            <a href="https://github.com/Yourself1011" target="_blank">
-                Github
-            </a>
-            <a
-                href="https://www.linkedin.com/in/daniel-zhang-0770a0249/"
-                target="_blank"
-            >
+            <a href="https://github.com/Yourself1011" target="_blank"> Github </a>
+            <a href="https://www.linkedin.com/in/daniel-zhang-0770a0249/" target="_blank">
                 Linkedin
             </a>
             <a
@@ -239,12 +200,7 @@
                 Resume
             </a>
             <a href="mailto:hi@danielzh.dev" target="_blank"> Email </a>
-            <a
-                href="https://github.com/Yourself1011/personal-website"
-                target="_blank"
-            >
-                Source
-            </a>
+            <a href="https://github.com/Yourself1011/personal-website" target="_blank"> Source </a>
         </div>
         <div class="md:col-span-2 flex justify-center items-end">
             <span
