@@ -38,6 +38,7 @@
                         `perspective-12`,
                         `perspective-6`,
                     ][i]}"
+                    loading="lazy"
                 />
             </div>
         {/each}
@@ -55,6 +56,7 @@
                             alt={`${tech.name} logo`}
                             height="20px"
                             width="20px"
+                            loading="lazy"
                         />
                     </a>
                 {/each}
@@ -85,11 +87,7 @@
 
 <style lang="scss">
     .bgImg {
-        mask-image: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 1),
-            rgba(0, 0, 0, 0)
-        );
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     }
     .bgImgContainer {
         @media (max-width: 768px) {

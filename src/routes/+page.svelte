@@ -185,7 +185,12 @@
         class="mt-32 p-16 grid md:grid-cols-2 md:grid-rows-2 grid-cols-1 grid-rows-3 gap-16 place-content-center border-t-[1px] border-t-slate-800 bg-gradient-to-b from-black to-slate-950"
     >
         <div class="flex flex-row items-center justify-center gap-4">
-            <img src="/favicon.svg" alt="Daniel Zhang logo" class="invert h-12 w-12 inline" />
+            <img
+                src="/favicon.svg"
+                alt="Daniel Zhang logo"
+                class="invert h-12 w-12 inline"
+                loading="lazy"
+            />
             <span>© Daniel Zhang 2024</span>
         </div>
         <div class="flex flex-row flex-wrap items-center justify-center gap-8">
