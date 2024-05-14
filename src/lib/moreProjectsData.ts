@@ -29,6 +29,13 @@ export const projects: Project[] = [
         <span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span><span style="color:rgb(255,255,255)">@</span>`,
     },
     {
+        name: "Productivitazer",
+        description:
+            "Productivitazer sends an electrical shock to the user whenever they go on a website they are trying to stop using. Not only does Productivitazer stop the website from opening and loading, it also provides that pain for the brain to recognize that that app has got to go away.",
+        link: "https://github.com/Yourself1011/productivity-taser",
+        image: ``,
+    },
+    {
         name: "spaceboids",
         description:
             "An implementation of Craig Reynolds' boids (bird-oids) algorithm in three dimensions, with a space theme. Boids will avoid asteroids, and behave in a bird-like flocking manner.",
