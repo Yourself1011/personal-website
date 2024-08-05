@@ -88,6 +88,11 @@
                     href: "https://github.com/Yourself1011/Ultimate_Fluid_Sim",
                     style: "bg-[#21262d]",
                 },
+                {
+                    icon: BiYoutube,
+                    href: "https://youtu.be/ttuKNuEuRwk",
+                    style: "bg-[#ED3833]",
+                },
             ]}
             locations={["top-1 -translate-x-[125%]", "top-1/2", "bottom-0 translate-x-[25%]"]}
             techs={[
