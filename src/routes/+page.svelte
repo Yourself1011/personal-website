@@ -41,19 +41,19 @@
             <div
                 class="flex justify-center md:text-5xl text-2xl {scrolled
                     ? 'opacity-100'
-                    : 'opacity-0'} transition-opacity duration-1000 ease-in-out"
+                    : 'opacity-0'} transition-opacity duration-1000 ease-in-out max-w-full flex-wrap gap-y-8"
             >
                 <div class="px-8">
                     <a href="https://github.com/Yourself1011" target="_blank">
                         <BiGithub />
                     </a>
                 </div>
-                <div class="px-8 border-l-[1px] border-l-slate-800">
+                <div class="px-8">
                     <a href="https://www.linkedin.com/in/daniel-zhang-0770a0249/" target="_blank">
                         <BiLinkedin />
                     </a>
                 </div>
-                <div class="px-8 border-l-[1px] border-l-slate-800">
+                <div class="px-8">
                     <a
                         href="https://drive.google.com/file/d/1KUxfa9MNOW0ZjcVuMHvlZE1-GJHGwcQt/view"
                         target="_blank"
@@ -61,9 +61,14 @@
                         <BiFileEarmarkTextFill />
                     </a>
                 </div>
-                <div class="px-8 border-l-[1px] border-l-slate-800">
+                <div class="px-8">
                     <a href="mailto:hi@danielzh.dev" target="_blank">
                         <BiEnvelopeFill />
+                    </a>
+                </div>
+                <div class="px-8">
+                    <a href="https://youtube.com/@danielcsthings" target="_blank">
+                        <BiYoutube />
                     </a>
                 </div>
             </div>
