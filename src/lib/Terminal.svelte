@@ -108,8 +108,8 @@
                 something new, and I always try to use a new technology or
                 concept in every project I do.
                 <br /><br />
-                Apart from coding, I also enjoy playing piano (working towards my
-                LRCM) and watching hockey (go Leafs go)
+                Apart from coding, I also enjoy playing piano (LRCM) and watching
+                hockey (go Leafs go)
             </p>
         {/if}
     </div>
