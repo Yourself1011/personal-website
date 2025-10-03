@@ -24,8 +24,8 @@ importers:
         specifier: ^10.4.18
         version: 10.4.20(postcss@8.5.1)
       node:
-        specifier: ^24.9.0
-        version: 24.9.0
+        specifier: ^22.20.0
+        version: 22.20.0
       postcss:
         specifier: ^8.4.35
         version: 8.5.1
@@ -1251,8 +1251,8 @@ packages:
   node-releases@2.0.19:
     resolution: {integrity: sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw==}
 
-  node@24.9.0:
-    resolution: {integrity: sha512-cczSuf6uJejZ+dR+BAUEd6t2TxW31GvSexzEEvUKKRT59E/oYxUk3fixnUUqMG4tCtjg2wpZp3hfPdGuSg4pgw==}
+  node@22.20.0:
+    resolution: {integrity: sha512-5s76ty1RExWqukVyzfq+9jOPB7FaLIJKUVxGwTI9xOHdePLmkq9bfYUGQ54oudx+sRgznAHvHaUomH5kVhqkxQ==}
     engines: {npm: '>=5.0.0'}
     hasBin: true
 
@@ -2861,7 +2861,7 @@ snapshots:
 
   node-releases@2.0.19: {}
 
-  node@24.9.0:
+  node@22.20.0:
     dependencies:
       node-bin-setup: 1.1.4
 
