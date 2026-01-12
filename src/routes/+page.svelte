@@ -26,7 +26,10 @@
 </svelte:head>
 
 <main on:scroll={() => (scrolled = true)}>
-    <section class="relative h-dvh flex justify-center items-center z-10" id="splash">
+    <section
+        class="relative h-dvh flex justify-center items-center z-10"
+        id="splash"
+    >
         {#each data.circles as { fill, cx, cy, r }}
             <svg
                 width="100%"
@@ -49,7 +52,10 @@
                     </a>
                 </div>
                 <div class="px-8">
-                    <a href="https://www.linkedin.com/in/daniel-zhang-0770a0249/" target="_blank">
+                    <a
+                        href="https://www.linkedin.com/in/daniel-zhang-0770a0249/"
+                        target="_blank"
+                    >
                         <BiLinkedin />
                     </a>
                 </div>
@@ -67,7 +73,10 @@
                     </a>
                 </div>
                 <div class="px-8">
-                    <a href="https://youtube.com/@danielcsthings" target="_blank">
+                    <a
+                        href="https://youtube.com/@danielcsthings"
+                        target="_blank"
+                    >
                         <BiYoutube />
                     </a>
                 </div>
@@ -99,7 +108,11 @@
                     style: "bg-[#ED3833]",
                 },
             ]}
-            locations={["top-1 -translate-x-[125%]", "top-1/2", "bottom-0 translate-x-[25%]"]}
+            locations={[
+                "top-1 -translate-x-[125%]",
+                "top-1/2",
+                "bottom-0 translate-x-[25%]",
+            ]}
             techs={[
                 {
                     name: "Processing",
@@ -111,7 +124,11 @@
         <Project
             title="Ant Colonies"
             description="An implementation of Kenneth Stanley's NeuroEvolution of Augmenting Topologies (NEAT). In this implementation, ant colonies compete against each other for food. The best colonies produce similar colonies, making the colonies progressively better. It is able to simulate fighting, food, pheromones, offspring, and nest raids."
-            imgPaths={["/antColonies/img1.png", "/antColonies/img2.png", "/antColonies/img3.png"]}
+            imgPaths={[
+                "/antColonies/img1.png",
+                "/antColonies/img2.png",
+                "/antColonies/img3.png",
+            ]}
             buttons={[
                 {
                     icon: BiGithub,
@@ -119,7 +136,11 @@
                     style: "bg-[#21262d]",
                 },
             ]}
-            locations={["top-0 translate-x-[25%]", "top-1/2", "bottom-0 -translate-x-[125%]"]}
+            locations={[
+                "top-0 translate-x-[25%]",
+                "top-1/2",
+                "bottom-0 -translate-x-[125%]",
+            ]}
             techs={[
                 {
                     name: "Processing",
@@ -131,7 +152,11 @@
         <Project
             title="motus."
             description="A wheelchair controlled with your eyes, submitted to Hack the North 2023. All circuitry, code, and construction was built in the span of 34 hours, from an office chair and provided eye-tracking glasses."
-            imgPaths={["/motus/img1.jpeg", "/motus/img2.jpeg", "/motus/img3.jpeg"]}
+            imgPaths={[
+                "/motus/img1.jpeg",
+                "/motus/img2.jpeg",
+                "/motus/img3.jpeg",
+            ]}
             buttons={[
                 {
                     icon: BiGithub,
@@ -144,7 +169,11 @@
                     style: "bg-[#ED3833]",
                 },
             ]}
-            locations={["top-0 -translate-x-[125%]", "top-1/2", "bottom-0 translate-x-[25%]"]}
+            locations={[
+                "top-0 -translate-x-[125%]",
+                "top-1/2",
+                "bottom-0 translate-x-[25%]",
+            ]}
             techs={[
                 {
                     name: "Python",
@@ -178,7 +207,11 @@
                     style: "bg-[#EF6236]",
                 },
             ]}
-            locations={["top-0 -translate-x-[125%]", "top-1/2", "bottom-0 translate-x-[25%]"]}
+            locations={[
+                "top-0 -translate-x-[125%]",
+                "top-1/2",
+                "bottom-0 translate-x-[25%]",
+            ]}
             techs={[
                 {
                     name: "Python",
@@ -201,11 +234,16 @@
                 class="invert h-12 w-12 inline"
                 loading="lazy"
             />
-            <span>© Daniel Zhang 2024</span>
+            <span>© Daniel Zhang 2026</span>
         </div>
         <div class="flex flex-row flex-wrap items-center justify-center gap-8">
-            <a href="https://github.com/Yourself1011" target="_blank"> Github </a>
-            <a href="https://www.linkedin.com/in/daniel-zhang-0770a0249/" target="_blank">
+            <a href="https://github.com/Yourself1011" target="_blank">
+                Github
+            </a>
+            <a
+                href="https://www.linkedin.com/in/daniel-zhang-0770a0249/"
+                target="_blank"
+            >
                 Linkedin
             </a>
             <a
@@ -215,7 +253,12 @@
                 Resume
             </a>
             <a href="mailto:hi@danielzh.dev" target="_blank"> Email </a>
-            <a href="https://github.com/Yourself1011/personal-website" target="_blank"> Source </a>
+            <a
+                href="https://github.com/Yourself1011/personal-website"
+                target="_blank"
+            >
+                Source
+            </a>
         </div>
         <div class="md:col-span-2 flex justify-center items-end">
             <span
