@@ -9,6 +9,8 @@
     import BiLinkedin from "~icons/bi/linkedin";
     import BiFileEarmarkTextFill from "~icons/bi/file-earmark-text-fill";
     import BiEnvelopeFill from "~icons/bi/envelope-fill";
+    import BiArrowLeft from "~icons/bi/arrow-left";
+    import BiArrowRight from "~icons/bi/arrow-right";
     import { randomEmoji } from "$lib/utils";
     import Terminal from "$lib/Terminal.svelte";
 
@@ -260,7 +262,22 @@
                 Source
             </a>
         </div>
-        <div class="md:col-span-2 flex justify-center items-end">
+        <div class="flex justify-center items-center">
+            <a href="https://bhuvnesh.me" class="px-4">
+                <BiArrowLeft />
+            </a>
+            <a href="https://se-webring.xyz">
+                <img
+                    src="/se_webring_logo.svg"
+                    alt="SE webring logo"
+                    class="size-12 inline"
+                />
+            </a>
+            <a href="https://simranthind.me" class="px-4">
+                <BiArrowRight />
+            </a>
+        </div>
+        <div class="flex justify-center items-end">
             <span
                 >Made with {randomEmoji()} and {randomEmoji()} (and <SvelteIcon
                     class="inline"
