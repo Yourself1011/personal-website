@@ -101,11 +101,11 @@
             </span>
             cat aboutme.txt<br />
             <p>
-                I'm a high school student based in Waterloo, Ontario that loves
-                to code. More specifically, I love breaking down seemingly
-                complex things in detail, figuring out how they work, then
-                recreating them from scratch. I'm always looking to learn or do
-                something new, and I always try to use a new technology or
+                I'm a Software Engineering student at the University of Waterloo
+                that loves to code. More specifically, I love breaking down
+                seemingly complex things in detail, figuring out how they work,
+                then recreating them from scratch. I'm always looking to learn
+                or do something new, and I always try to use a new technology or
                 concept in every project I do.
                 <br /><br />
                 Apart from coding, I also enjoy playing piano (LRCM) and watching
