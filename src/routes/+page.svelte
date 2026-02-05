@@ -273,7 +273,7 @@
                     class="size-12 inline"
                 />
             </a>
-            <a href="https://simranthind.me" class="px-4">
+            <a href="https://www.adiprasad.com" class="px-4">
                 <BiArrowRight />
             </a>
         </div>
